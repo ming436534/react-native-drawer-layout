@@ -1,10 +1,12 @@
-import {
-  Platform,
-  DrawerLayoutAndroid,
-} from 'react-native';
+// import {
+//   Platform,
+//   DrawerLayoutAndroid,
+// } from 'react-native';
 
-if (Platform.OS === 'android') {
-  module.exports = DrawerLayoutAndroid;
-} else {
-  module.exports = require('./DrawerLayout.ios').default;
-}
+// if (Platform.OS === 'android') {
+//   module.exports = DrawerLayoutAndroid;
+// } else {
+//   module.exports = require('./DrawerLayout.ios').default;
+// }
+
+module.exports = require('./DrawerLayout.ios').default;
