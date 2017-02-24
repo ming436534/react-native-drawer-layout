@@ -7,7 +7,7 @@
     "babel": "babel src --out-dir dist",
     "build": "npm run-script clear && npm run-script babel",
     "clear": "rm -rf dist/ && mkdir dist/",
-    "prepublish": "npm run build",
+    "postinstall": "npm run build",
     "test": "xo"
   },
   "files": [
